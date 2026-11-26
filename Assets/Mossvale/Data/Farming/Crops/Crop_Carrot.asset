@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f0618b0a088402aad387a2668bde8a, type: 3}
+  m_Name: Crop_Carrot
+  m_EditorClassIdentifier: Mossvale.Gameplay::Mossvale.Farming.CropData
+  cropId: carrot
+  displayName: Carrot
+  seedItem: {fileID: 11400000, guid: cd2196ac3b00f428f8c54b9845e2468f, type: 2}
+  produceItem: {fileID: 11400000, guid: c08afbc04d00841f3a6235a4bc80da4e, type: 2}
+  secondsPerStage: 10
+  stagePrefabs:
+  - {fileID: 5604252526050048911, guid: 45ea7b09f72504cfab2e443563672d33, type: 3}
+  - {fileID: 4592109346111632770, guid: 8ac9c734dae4143b9931106b5e2c6b1c, type: 3}
+  - {fileID: 4770194865601417778, guid: 51d80b86d41f44e0da89b89efa322b28, type: 3}
+  - {fileID: 7236904531536427063, guid: 11259e555bf8340919e4b607335a79a7, type: 3}
+  minYield: 2
+  maxYield: 4
+  minSeedsBack: 1
+  maxSeedsBack: 2

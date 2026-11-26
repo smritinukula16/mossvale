@@ -112,3 +112,35 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# --- Build intermediates ---
+*_BurstDebugInformation_DoNotShip/
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+*.ipa
+
+# --- Signing keys & secrets (never commit) ---
+*.keystore
+*.jks
+.env
+.env.*
+
+# --- Raw recordings (published as release assets instead) ---
+*.mov
+*.mkv
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Local notes / tooling ---
+CLAUDE.md
+.claude/
+
+# --- Third-party Asset Store content (not redistributable) and the scratch scene that uses it ---
+/[Aa]ssets/Gridness Studios/
+/[Aa]ssets/Gridness Studios.meta
+/[Aa]ssets/Farm.unity
+/[Aa]ssets/Farm.unity.meta
+/[Aa]ssets/Farm/
+/[Aa]ssets/Farm.meta

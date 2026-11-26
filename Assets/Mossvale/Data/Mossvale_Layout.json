@@ -1,0 +1,2343 @@
+{
+ "objects": [
+  {
+   "name": "Ground",
+   "collection": "Environment_Ground",
+   "prototype": "Ground",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Patches_Dark",
+   "collection": "Environment_Ground",
+   "prototype": "Grass_Patches_Dark",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Patches_Light",
+   "collection": "Environment_Ground",
+   "prototype": "Grass_Patches_Light",
+   "parent": ""
+  },
+  {
+   "name": "Yards_Dirt",
+   "collection": "Environment_Ground",
+   "prototype": "Yards_Dirt",
+   "parent": ""
+  },
+  {
+   "name": "Garden_Floor",
+   "collection": "Environment_Ground",
+   "prototype": "Garden_Floor",
+   "parent": ""
+  },
+  {
+   "name": "Cottage_01",
+   "collection": "Buildings",
+   "prototype": "Cottage",
+   "parent": ""
+  },
+  {
+   "name": "Barn_01",
+   "collection": "Buildings",
+   "prototype": "Barn",
+   "parent": ""
+  },
+  {
+   "name": "Silo_01",
+   "collection": "Buildings",
+   "prototype": "Silo",
+   "parent": ""
+  },
+  {
+   "name": "Water_Tower_01",
+   "collection": "Buildings",
+   "prototype": "Water_Tower",
+   "parent": ""
+  },
+  {
+   "name": "Windmill_01",
+   "collection": "Buildings",
+   "prototype": "",
+   "parent": ""
+  },
+  {
+   "name": "Windmill_Tower_01",
+   "collection": "Buildings",
+   "prototype": "Windmill_Tower",
+   "parent": "Windmill_01"
+  },
+  {
+   "name": "Windmill_Blades_01",
+   "collection": "Buildings",
+   "prototype": "Windmill_Blades",
+   "parent": "Windmill_01"
+  },
+  {
+   "name": "Greenhouse_01",
+   "collection": "Buildings",
+   "prototype": "Greenhouse",
+   "parent": ""
+  },
+  {
+   "name": "Well_01",
+   "collection": "Buildings",
+   "prototype": "Well",
+   "parent": ""
+  },
+  {
+   "name": "Market_Stall_01",
+   "collection": "Buildings",
+   "prototype": "Market_Stall",
+   "parent": ""
+  },
+  {
+   "name": "Entrance_Arch_01",
+   "collection": "Buildings",
+   "prototype": "Entrance_Arch",
+   "parent": ""
+  },
+  {
+   "name": "CropBed_Pumpkin_01",
+   "collection": "Farm_Plants",
+   "prototype": "CropBed_Pumpkin",
+   "parent": ""
+  },
+  {
+   "name": "CropBed_Cabbage_01",
+   "collection": "Farm_Plants",
+   "prototype": "CropBed_Cabbage",
+   "parent": ""
+  },
+  {
+   "name": "CropBed_Carrot_01",
+   "collection": "Farm_Plants",
+   "prototype": "CropBed_Carrot",
+   "parent": ""
+  },
+  {
+   "name": "CropBed_Tomato_01",
+   "collection": "Farm_Plants",
+   "prototype": "CropBed_Tomato",
+   "parent": ""
+  },
+  {
+   "name": "CropBed_Wheat_01",
+   "collection": "Farm_Plants",
+   "prototype": "CropBed_Wheat",
+   "parent": ""
+  },
+  {
+   "name": "CropBed_Sunflower_01",
+   "collection": "Farm_Plants",
+   "prototype": "CropBed_Sunflower",
+   "parent": ""
+  },
+  {
+   "name": "FlowerBed_Mixed_01",
+   "collection": "Farm_Plants",
+   "prototype": "FlowerBed_Mixed",
+   "parent": ""
+  },
+  {
+   "name": "FlowerBed_Mixed_02",
+   "collection": "Farm_Plants",
+   "prototype": "FlowerBed_Mixed",
+   "parent": ""
+  },
+  {
+   "name": "FlowerBed_Mixed_03",
+   "collection": "Farm_Plants",
+   "prototype": "FlowerBed_Mixed",
+   "parent": ""
+  },
+  {
+   "name": "FlowerBed_Mixed_04",
+   "collection": "Farm_Plants",
+   "prototype": "FlowerBed_Mixed",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Flowering_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Flowering",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Berry_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Berry",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Round_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Round",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Tall_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Tall",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Round_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Round",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Berry_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Berry",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Flowering_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Flowering",
+   "parent": ""
+  },
+  {
+   "name": "Hedge_2m_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Hedge_2m",
+   "parent": ""
+  },
+  {
+   "name": "Hedge_2m_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Hedge_2m",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Tulip_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Tulip",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Daisy_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Daisy",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Lavender_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Lavender",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Poppy_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Poppy",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Daisy_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Daisy",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Tulip_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Tulip",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Blue_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Blue",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Lavender_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Lavender",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Daisy_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Daisy",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Blossom_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Blossom",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Oak_B_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Oak_B",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Round_Small_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Round_Small",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Pine_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Pine",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Slim_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Slim",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Berry_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Berry",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Medium_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Rock_Medium",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Daisy_04",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Daisy",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Blossom_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Blossom",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Oak_A_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Oak_A",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Autumn_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Autumn",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Pine_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Pine",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Pine_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Pine",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Oak_B_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Oak_B",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Slim_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Slim",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Pine_04",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Pine",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Pine_05",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Pine",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Round_Small_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Round_Small",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Slim_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Slim",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Round_Small_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Round_Small",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Slim_04",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Slim",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Slim_05",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Slim",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Oak_A_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Oak_A",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Slim_06",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Slim",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Blossom_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Blossom",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Oak_B_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Oak_B",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Oak_B_04",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Oak_B",
+   "parent": ""
+  },
+  {
+   "name": "Tree_Oak_A_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Tree_Oak_A",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Small_11",
+   "collection": "Trees_and_Nature",
+   "prototype": "Rock_Small",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Medium_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Rock_Medium",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Round_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Round",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Tall_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Tall",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Berry_04",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Berry",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Flowering_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Flowering",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Round_04",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Round",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Round_05",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Round",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Berry_05",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Berry",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Flowering_04",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Flowering",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Berry_06",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Berry",
+   "parent": ""
+  },
+  {
+   "name": "Bush_Tall_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Bush_Tall",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Daisy_05",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Daisy",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Poppy_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Poppy",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Blue_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Blue",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Tulip_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Tulip",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Poppy_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Poppy",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Tulip_04",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Tulip",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Daisy_06",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Daisy",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Tulip_05",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Tulip",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Daisy_07",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Daisy",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Blue_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Blue",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Poppy_04",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Poppy",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Tulip_06",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Tulip",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Blue_04",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Blue",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Daisy_08",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Daisy",
+   "parent": ""
+  },
+  {
+   "name": "Flowers_Daisy_09",
+   "collection": "Trees_and_Nature",
+   "prototype": "Flowers_Daisy",
+   "parent": ""
+  },
+  {
+   "name": "Mushrooms_Brown_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Mushrooms_Brown",
+   "parent": ""
+  },
+  {
+   "name": "Mushrooms_Red_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Mushrooms_Red",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_04",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_05",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_06",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_04",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_04",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_05",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_05",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_06",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_07",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_07",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_08",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_09",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_08",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_06",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_09",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_07",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_10",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_10",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_11",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_11",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_12",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_12",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_08",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_13",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_13",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_14",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_14",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_15",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_16",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_09",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_17",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_15",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_10",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_18",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_19",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_16",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_11",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_12",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_17",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_18",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_20",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_19",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_20",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_13",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_21",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_21",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_14",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_15",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_22",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_16",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_23",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_17",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_18",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_24",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_19",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_22",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_20",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_21",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_22",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_23",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_24",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_23",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_24",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_25",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_25",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_26",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_25",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_26",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_27",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_27",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_28",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_28",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_26",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_29",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_27",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_28",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_29",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_29",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_30",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_30",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_31",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_32",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_31",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_32",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_30",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_31",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_33",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_34",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_33",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_35",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_32",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_33",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_34",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_35",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_36",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_36",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_C_37",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_C",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_37",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_34",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_35",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_36",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_A_37",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_A",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_38",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Grass_Tuft_B_39",
+   "collection": "Trees_and_Nature",
+   "prototype": "Grass_Tuft_B",
+   "parent": ""
+  },
+  {
+   "name": "Pebbles_01",
+   "collection": "Trees_and_Nature",
+   "prototype": "Pebbles",
+   "parent": ""
+  },
+  {
+   "name": "Pebbles_02",
+   "collection": "Trees_and_Nature",
+   "prototype": "Pebbles",
+   "parent": ""
+  },
+  {
+   "name": "Pebbles_03",
+   "collection": "Trees_and_Nature",
+   "prototype": "Pebbles",
+   "parent": ""
+  },
+  {
+   "name": "Path_Main",
+   "collection": "Fences_and_Paths",
+   "prototype": "Path_Main",
+   "parent": ""
+  },
+  {
+   "name": "Path_Barn",
+   "collection": "Fences_and_Paths",
+   "prototype": "Path_Barn",
+   "parent": ""
+  },
+  {
+   "name": "Path_Cottage",
+   "collection": "Fences_and_Paths",
+   "prototype": "Path_Cottage",
+   "parent": ""
+  },
+  {
+   "name": "Path_GardenGate",
+   "collection": "Fences_and_Paths",
+   "prototype": "Path_GardenGate",
+   "parent": ""
+  },
+  {
+   "name": "Path_GardenNorthGate",
+   "collection": "Fences_and_Paths",
+   "prototype": "Path_GardenNorthGate",
+   "parent": ""
+  },
+  {
+   "name": "Path_Pond",
+   "collection": "Fences_and_Paths",
+   "prototype": "Path_Pond",
+   "parent": ""
+  },
+  {
+   "name": "Path_Market",
+   "collection": "Fences_and_Paths",
+   "prototype": "Path_Market",
+   "parent": ""
+  },
+  {
+   "name": "Path_Stone_Cottage",
+   "collection": "Fences_and_Paths",
+   "prototype": "Path_Stone_Cottage",
+   "parent": ""
+  },
+  {
+   "name": "Path_Stone_Pond",
+   "collection": "Fences_and_Paths",
+   "prototype": "Path_Stone_Pond",
+   "parent": ""
+  },
+  {
+   "name": "Path_Stone_Market",
+   "collection": "Fences_and_Paths",
+   "prototype": "Path_Stone_Market",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_01",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_02",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_03",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_04",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_05",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_06",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_07",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_08",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_09",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_10",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_11",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_12",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_13",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_14",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_15",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_16",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_17",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_18",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_19",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_20",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_21",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_22",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_23",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_24",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Gate_Wood_2m_01",
+   "collection": "Fences_and_Paths",
+   "prototype": "Gate_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_25",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_26",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_27",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_28",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_29",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_30",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_31",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_32",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Gate_Wood_2m_02",
+   "collection": "Fences_and_Paths",
+   "prototype": "Gate_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_33",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Wood_2m_34",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Wood_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_01",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_02",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_03",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_04",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Gate_Picket_2m_01",
+   "collection": "Fences_and_Paths",
+   "prototype": "Gate_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_05",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_06",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_07",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_08",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_09",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_10",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_11",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_12",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_13",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_14",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_15",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_16",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_17",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_18",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_19",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_20",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_21",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_22",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_23",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_24",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Fence_Picket_2m_25",
+   "collection": "Fences_and_Paths",
+   "prototype": "Fence_Picket_2m",
+   "parent": ""
+  },
+  {
+   "name": "Scarecrow_01",
+   "collection": "Props",
+   "prototype": "Scarecrow",
+   "parent": ""
+  },
+  {
+   "name": "Sign_Board_Crops_01",
+   "collection": "Props",
+   "prototype": "Sign_Board_Crops",
+   "parent": ""
+  },
+  {
+   "name": "Basket_Veg_01",
+   "collection": "Props",
+   "prototype": "Basket_Veg",
+   "parent": ""
+  },
+  {
+   "name": "Watering_Can_01",
+   "collection": "Props",
+   "prototype": "Watering_Can",
+   "parent": ""
+  },
+  {
+   "name": "Bucket_01",
+   "collection": "Props",
+   "prototype": "Bucket",
+   "parent": ""
+  },
+  {
+   "name": "Wheelbarrow_01",
+   "collection": "Props",
+   "prototype": "Wheelbarrow",
+   "parent": ""
+  },
+  {
+   "name": "Crate_Tomato_01",
+   "collection": "Props",
+   "prototype": "Crate_Tomato",
+   "parent": ""
+  },
+  {
+   "name": "Crate_Pumpkin_01",
+   "collection": "Props",
+   "prototype": "Crate_Pumpkin",
+   "parent": ""
+  },
+  {
+   "name": "Crate_Cabbage_01",
+   "collection": "Props",
+   "prototype": "Crate_Cabbage",
+   "parent": ""
+  },
+  {
+   "name": "Flower_Pot_01",
+   "collection": "Props",
+   "prototype": "Flower_Pot",
+   "parent": ""
+  },
+  {
+   "name": "Flower_Pot_02",
+   "collection": "Props",
+   "prototype": "Flower_Pot",
+   "parent": ""
+  },
+  {
+   "name": "Bench_01",
+   "collection": "Props",
+   "prototype": "Bench",
+   "parent": ""
+  },
+  {
+   "name": "Log_Pile_01",
+   "collection": "Props",
+   "prototype": "Log_Pile",
+   "parent": ""
+  },
+  {
+   "name": "Stump_Axe_01",
+   "collection": "Props",
+   "prototype": "Stump_Axe",
+   "parent": ""
+  },
+  {
+   "name": "Hay_Bale_Square_01",
+   "collection": "Props",
+   "prototype": "Hay_Bale_Square",
+   "parent": ""
+  },
+  {
+   "name": "Hay_Bale_Square_02",
+   "collection": "Props",
+   "prototype": "Hay_Bale_Square",
+   "parent": ""
+  },
+  {
+   "name": "Hay_Bale_Square_03",
+   "collection": "Props",
+   "prototype": "Hay_Bale_Square",
+   "parent": ""
+  },
+  {
+   "name": "Hay_Bale_Square_04",
+   "collection": "Props",
+   "prototype": "Hay_Bale_Square",
+   "parent": ""
+  },
+  {
+   "name": "Hay_Bale_Round_01",
+   "collection": "Props",
+   "prototype": "Hay_Bale_Round",
+   "parent": ""
+  },
+  {
+   "name": "Hay_Bale_Round_02",
+   "collection": "Props",
+   "prototype": "Hay_Bale_Round",
+   "parent": ""
+  },
+  {
+   "name": "Crate_Tomato_02",
+   "collection": "Props",
+   "prototype": "Crate_Tomato",
+   "parent": ""
+  },
+  {
+   "name": "Crate_Apple_01",
+   "collection": "Props",
+   "prototype": "Crate_Apple",
+   "parent": ""
+  },
+  {
+   "name": "Crate_Carrot_01",
+   "collection": "Props",
+   "prototype": "Crate_Carrot",
+   "parent": ""
+  },
+  {
+   "name": "Crate_Empty_01",
+   "collection": "Props",
+   "prototype": "Crate_Empty",
+   "parent": ""
+  },
+  {
+   "name": "Barrel_01",
+   "collection": "Props",
+   "prototype": "Barrel",
+   "parent": ""
+  },
+  {
+   "name": "Barrel_Water_01",
+   "collection": "Props",
+   "prototype": "Barrel_Water",
+   "parent": ""
+  },
+  {
+   "name": "Barrel_02",
+   "collection": "Props",
+   "prototype": "Barrel",
+   "parent": ""
+  },
+  {
+   "name": "Sack_Grain_01",
+   "collection": "Props",
+   "prototype": "Sack_Grain",
+   "parent": ""
+  },
+  {
+   "name": "Sack_Grain_02",
+   "collection": "Props",
+   "prototype": "Sack_Grain",
+   "parent": ""
+  },
+  {
+   "name": "Cart_Hay_01",
+   "collection": "Props",
+   "prototype": "Cart_Hay",
+   "parent": ""
+  },
+  {
+   "name": "Hay_Pile_01",
+   "collection": "Props",
+   "prototype": "Hay_Pile",
+   "parent": ""
+  },
+  {
+   "name": "Wheelbarrow_02",
+   "collection": "Props",
+   "prototype": "Wheelbarrow",
+   "parent": ""
+  },
+  {
+   "name": "Lantern_Post_01",
+   "collection": "Props",
+   "prototype": "Lantern_Post",
+   "parent": ""
+  },
+  {
+   "name": "Lantern_Post_02",
+   "collection": "Props",
+   "prototype": "Lantern_Post",
+   "parent": ""
+  },
+  {
+   "name": "Crate_Apple_02",
+   "collection": "Props",
+   "prototype": "Crate_Apple",
+   "parent": ""
+  },
+  {
+   "name": "Crate_Carrot_02",
+   "collection": "Props",
+   "prototype": "Crate_Carrot",
+   "parent": ""
+  },
+  {
+   "name": "Crate_Tomato_03",
+   "collection": "Props",
+   "prototype": "Crate_Tomato",
+   "parent": ""
+  },
+  {
+   "name": "Basket_Apple_01",
+   "collection": "Props",
+   "prototype": "Basket_Apple",
+   "parent": ""
+  },
+  {
+   "name": "Basket_Orange_01",
+   "collection": "Props",
+   "prototype": "Basket_Orange",
+   "parent": ""
+  },
+  {
+   "name": "Basket_Veg_02",
+   "collection": "Props",
+   "prototype": "Basket_Veg",
+   "parent": ""
+  },
+  {
+   "name": "Cart_Pumpkin_01",
+   "collection": "Props",
+   "prototype": "Cart_Pumpkin",
+   "parent": ""
+  },
+  {
+   "name": "Barrel_03",
+   "collection": "Props",
+   "prototype": "Barrel",
+   "parent": ""
+  },
+  {
+   "name": "Sack_Grain_03",
+   "collection": "Props",
+   "prototype": "Sack_Grain",
+   "parent": ""
+  },
+  {
+   "name": "Bucket_02",
+   "collection": "Props",
+   "prototype": "Bucket",
+   "parent": ""
+  },
+  {
+   "name": "Lantern_Post_03",
+   "collection": "Props",
+   "prototype": "Lantern_Post",
+   "parent": ""
+  },
+  {
+   "name": "Sign_Post_Market_01",
+   "collection": "Props",
+   "prototype": "Sign_Post_Market",
+   "parent": ""
+  },
+  {
+   "name": "Sign_Post_Garden_01",
+   "collection": "Props",
+   "prototype": "Sign_Post_Garden",
+   "parent": ""
+  },
+  {
+   "name": "Sign_Post_Barn_01",
+   "collection": "Props",
+   "prototype": "Sign_Post_Barn",
+   "parent": ""
+  },
+  {
+   "name": "Bench_02",
+   "collection": "Props",
+   "prototype": "Bench",
+   "parent": ""
+  },
+  {
+   "name": "Lantern_Post_04",
+   "collection": "Props",
+   "prototype": "Lantern_Post",
+   "parent": ""
+  },
+  {
+   "name": "Lantern_Post_05",
+   "collection": "Props",
+   "prototype": "Lantern_Post",
+   "parent": ""
+  },
+  {
+   "name": "Lantern_Post_06",
+   "collection": "Props",
+   "prototype": "Lantern_Post",
+   "parent": ""
+  },
+  {
+   "name": "Lantern_Post_07",
+   "collection": "Props",
+   "prototype": "Lantern_Post",
+   "parent": ""
+  },
+  {
+   "name": "Lantern_Post_08",
+   "collection": "Props",
+   "prototype": "Lantern_Post",
+   "parent": ""
+  },
+  {
+   "name": "Lantern_Post_09",
+   "collection": "Props",
+   "prototype": "Lantern_Post",
+   "parent": ""
+  },
+  {
+   "name": "Pond_Bank",
+   "collection": "Water",
+   "prototype": "Pond_Bank",
+   "parent": ""
+  },
+  {
+   "name": "Pond_Water",
+   "collection": "Water",
+   "prototype": "Pond_Water",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Small_01",
+   "collection": "Water",
+   "prototype": "Rock_Small",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Small_02",
+   "collection": "Water",
+   "prototype": "Rock_Small",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Flat_01",
+   "collection": "Water",
+   "prototype": "Rock_Flat",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Flat_02",
+   "collection": "Water",
+   "prototype": "Rock_Flat",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Small_03",
+   "collection": "Water",
+   "prototype": "Rock_Small",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Small_04",
+   "collection": "Water",
+   "prototype": "Rock_Small",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Flat_03",
+   "collection": "Water",
+   "prototype": "Rock_Flat",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Small_05",
+   "collection": "Water",
+   "prototype": "Rock_Small",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Small_06",
+   "collection": "Water",
+   "prototype": "Rock_Small",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Flat_04",
+   "collection": "Water",
+   "prototype": "Rock_Flat",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Small_07",
+   "collection": "Water",
+   "prototype": "Rock_Small",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Medium_01",
+   "collection": "Water",
+   "prototype": "Rock_Medium",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Small_08",
+   "collection": "Water",
+   "prototype": "Rock_Small",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Small_09",
+   "collection": "Water",
+   "prototype": "Rock_Small",
+   "parent": ""
+  },
+  {
+   "name": "Rock_Small_10",
+   "collection": "Water",
+   "prototype": "Rock_Small",
+   "parent": ""
+  },
+  {
+   "name": "Reeds_01",
+   "collection": "Water",
+   "prototype": "Reeds",
+   "parent": ""
+  },
+  {
+   "name": "Reeds_02",
+   "collection": "Water",
+   "prototype": "Reeds",
+   "parent": ""
+  },
+  {
+   "name": "Reeds_03",
+   "collection": "Water",
+   "prototype": "Reeds",
+   "parent": ""
+  },
+  {
+   "name": "Reeds_04",
+   "collection": "Water",
+   "prototype": "Reeds",
+   "parent": ""
+  },
+  {
+   "name": "Reeds_05",
+   "collection": "Water",
+   "prototype": "Reeds",
+   "parent": ""
+  },
+  {
+   "name": "Reeds_06",
+   "collection": "Water",
+   "prototype": "Reeds",
+   "parent": ""
+  },
+  {
+   "name": "Reeds_07",
+   "collection": "Water",
+   "prototype": "Reeds",
+   "parent": ""
+  },
+  {
+   "name": "Lily_Pad_Flower_01",
+   "collection": "Water",
+   "prototype": "Lily_Pad_Flower",
+   "parent": ""
+  },
+  {
+   "name": "Lily_Pad_01",
+   "collection": "Water",
+   "prototype": "Lily_Pad",
+   "parent": ""
+  },
+  {
+   "name": "Lily_Pad_02",
+   "collection": "Water",
+   "prototype": "Lily_Pad",
+   "parent": ""
+  },
+  {
+   "name": "Lily_Pad_Flower_02",
+   "collection": "Water",
+   "prototype": "Lily_Pad_Flower",
+   "parent": ""
+  },
+  {
+   "name": "Lily_Pad_03",
+   "collection": "Water",
+   "prototype": "Lily_Pad",
+   "parent": ""
+  },
+  {
+   "name": "Lily_Pad_04",
+   "collection": "Water",
+   "prototype": "Lily_Pad",
+   "parent": ""
+  },
+  {
+   "name": "Lily_Pad_Flower_03",
+   "collection": "Water",
+   "prototype": "Lily_Pad_Flower",
+   "parent": ""
+  },
+  {
+   "name": "Lily_Pad_05",
+   "collection": "Water",
+   "prototype": "Lily_Pad",
+   "parent": ""
+  },
+  {
+   "name": "Lily_Pad_06",
+   "collection": "Water",
+   "prototype": "Lily_Pad",
+   "parent": ""
+  },
+  {
+   "name": "Dock_01",
+   "collection": "Water",
+   "prototype": "Dock",
+   "parent": ""
+  }
+ ],
+ "lights": [
+  {
+   "name": "Sun_Main",
+   "dir": [
+    0.3679164199169326,
+    -0.6412218080254557,
+    0.6734033715894754
+   ],
+   "color": [
+    1.0,
+    0.8899999856948853,
+    0.699999988079071
+   ],
+   "energy": 3.5999999046325684
+  },
+  {
+   "name": "Sky_Fill",
+   "dir": [
+    -0.4330127439451806,
+    -0.499999974763217,
+    -0.7499999925452319
+   ],
+   "color": [
+    0.7200000286102295,
+    0.8399999737739563,
+    1.0
+   ],
+   "energy": 0.550000011920929
+  }
+ ],
+ "cameras": [
+  {
+   "name": "Cam_Isometric",
+   "pos": [
+    38.10816955566406,
+    69.40328216552734,
+    -80.1980209350586
+   ],
+   "dir": [
+    -0.36257291058936225,
+    -0.6018150660640973,
+    0.7115894256978701
+   ]
+  },
+  {
+   "name": "Cam_TopDown",
+   "pos": [
+    0.0,
+    100.0,
+    0.0
+   ],
+   "dir": [
+    -0.0,
+    -1.0,
+    -0.0
+   ]
+  },
+  {
+   "name": "Cam_Hero_Cottage",
+   "pos": [
+    -1.0,
+    12.0,
+    -29.0
+   ],
+   "dir": [
+    -0.0,
+    -0.2490410539781056,
+    0.9684929289537814
+   ]
+  }
+ ]
+}

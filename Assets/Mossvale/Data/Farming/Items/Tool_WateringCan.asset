@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21f3164f5fee4790bce3b1a21116015, type: 3}
+  m_Name: Tool_WateringCan
+  m_EditorClassIdentifier: Mossvale.Gameplay::Mossvale.Farming.ItemData
+  itemId: watering_can
+  displayName: Watering Can
+  category: 0
+  toolType: 2
+  plantsCrop: {fileID: 0}
+  icon: {fileID: 21300000, guid: 0038b2949847346c8b7e18f6d0f6eb02, type: 3}
+  tint: {r: 0.4, g: 0.6, b: 0.9, a: 1}
+  heldPrefab: {fileID: 1412725297871786914, guid: 0c315537012ba45d48e7bc08f430d0d7, type: 3}
+  heldOffset: {x: 0, y: -0.32, z: 0.08}
+  heldEuler: {x: 0, y: -90, z: 0}
+  heldScale: 0.7

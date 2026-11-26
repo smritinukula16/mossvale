@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d518846e8f264e828ed6bf25c97c1e4, type: 3}
+  m_Name: ItemDatabase
+  m_EditorClassIdentifier: Mossvale.Gameplay::Mossvale.Farming.ItemDatabase
+  items:
+  - {fileID: 11400000, guid: c08afbc04d00841f3a6235a4bc80da4e, type: 2}
+  - {fileID: 11400000, guid: 946e11d19093b4f0d8630b20cd7c9c39, type: 2}
+  - {fileID: 11400000, guid: 1467469eecd6a487e854126a4d142eaa, type: 2}
+  - {fileID: 11400000, guid: cd2196ac3b00f428f8c54b9845e2468f, type: 2}
+  - {fileID: 11400000, guid: 9f0c91857df2c4b7fad897f822eadad0, type: 2}
+  - {fileID: 11400000, guid: da5975680493e4c75898f6c672fb475f, type: 2}
+  - {fileID: 11400000, guid: 7c7dbec46a5684a8380d9d9ff2e159d8, type: 2}
+  - {fileID: 11400000, guid: 4e361ba22a0024fa49b5e72daad82f2b, type: 2}
+  - {fileID: 11400000, guid: e7da648438d8449e897ab87284029d21, type: 2}
+  - {fileID: 11400000, guid: bfbc4f85f01c04ec28bbdd69f49afb2a, type: 2}
+  crops:
+  - {fileID: 11400000, guid: a3438ceb74e514e459452c8a986fdf21, type: 2}
+  - {fileID: 11400000, guid: ef86463c993b3408580f9bc4c71dbb6c, type: 2}
+  - {fileID: 11400000, guid: 338fd04464f32402fb58bc37a7d1ced2, type: 2}

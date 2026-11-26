@@ -1,0 +1,304 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5439210547e33471fa413f0d04cb3cd1, type: 3}
+  m_Name: ProgressionConfig
+  m_EditorClassIdentifier: Mossvale.Gameplay::Mossvale.Farming.ProgressionConfig
+  levels:
+  - level: 1
+    starsRequired: 0
+    title: Sprouting Farm
+    rewards: []
+  - level: 2
+    starsRequired: 5
+    title: Budding Farm
+    rewards:
+    - type: 1
+      amount: 0
+      targetId: tomato
+      item: {fileID: 0}
+      description: 
+    - type: 0
+      amount: 20
+      targetId: 
+      item: {fileID: 0}
+      description: 
+  - level: 3
+    starsRequired: 15
+    title: Growing Farm
+    rewards:
+    - type: 1
+      amount: 0
+      targetId: wheat
+      item: {fileID: 0}
+      description: 
+    - type: 0
+      amount: 40
+      targetId: 
+      item: {fileID: 0}
+      description: 
+  - level: 4
+    starsRequired: 30
+    title: Thriving Farm
+    rewards:
+    - type: 2
+      amount: 3
+      targetId: 
+      item: {fileID: 0}
+      description: 
+    - type: 0
+      amount: 60
+      targetId: 
+      item: {fileID: 0}
+      description: 
+    - type: 5
+      amount: 0
+      targetId: 
+      item: {fileID: 0}
+      description: The greenhouse can be restored
+  - level: 5
+    starsRequired: 50
+    title: Flourishing Farm
+    rewards:
+    - type: 3
+      amount: 20
+      targetId: 
+      item: {fileID: 0}
+      description: 
+    - type: 0
+      amount: 100
+      targetId: 
+      item: {fileID: 0}
+      description: 
+    - type: 4
+      amount: 5
+      targetId: 
+      item: {fileID: 11400000, guid: 9f0c91857df2c4b7fad897f822eadad0, type: 2}
+      description: 
+  - level: 6
+    starsRequired: 80
+    title: Bountiful Farm
+    rewards:
+    - type: 0
+      amount: 150
+      targetId: 
+      item: {fileID: 0}
+      description: 
+    - type: 2
+      amount: 5
+      targetId: 
+      item: {fileID: 0}
+      description: 
+  - level: 7
+    starsRequired: 120
+    title: Heart of the Valley
+    rewards:
+    - type: 0
+      amount: 250
+      targetId: 
+      item: {fileID: 0}
+      description: 
+    - type: 3
+      amount: 30
+      targetId: 
+      item: {fileID: 0}
+      description: 
+  starsPerHarvest: 1
+  coinsPerStar: 30
+  starsPerAreaUnlock: 3
+  startingBeds:
+  - carrot
+  barnBaseCapacity: 30
+  greenhouseRequiredLevel: 4
+  greenhouseRequiredStars: 35
+  greenhouseGrowthBonus: 1.25
+  nurserySeedsPerProduce: 3
+  achievements:
+  - id: first_harvest
+    title: First Harvest
+    description: Harvest your very first crop
+    statKey: harvests
+    threshold: 1
+    stars: 2
+    coins: 0
+  - id: green_thumb
+    title: Green Thumb
+    description: Harvest 25 crops
+    statKey: harvests
+    threshold: 25
+    stars: 3
+    coins: 20
+  - id: variety
+    title: Variety Grower
+    description: Harvest carrots, tomatoes and wheat
+    statKey: kinds_harvested
+    threshold: 3
+    stars: 3
+    coins: 0
+  - id: water_bearer
+    title: Water Bearer
+    description: Water crops 30 times
+    statKey: waterings
+    threshold: 30
+    stars: 2
+    coins: 0
+  - id: market_day
+    title: Market Day
+    description: Sell your first produce
+    statKey: items_sold
+    threshold: 1
+    stars: 2
+    coins: 0
+  - id: merchant
+    title: Merchant
+    description: Earn 200 coins at the market
+    statKey: coins_from_sales
+    threshold: 200
+    stars: 4
+    coins: 25
+  - id: well_stocked
+    title: Well Stocked
+    description: Store 20 items in the barn
+    statKey: items_stored
+    threshold: 20
+    stars: 2
+    coins: 0
+  - id: growing_fields
+    title: Growing Fields
+    description: Unlock all three crop beds
+    statKey: beds_unlocked
+    threshold: 3
+    stars: 3
+    coins: 0
+  - id: under_glass
+    title: Under Glass
+    description: Restore the greenhouse
+    statKey: greenhouse_unlocked
+    threshold: 1
+    stars: 3
+    coins: 0
+  - id: heart_awakens
+    title: Heart Awakens
+    description: Begin restoring the Heart of Mossvale
+    statKey: heart_stage
+    threshold: 1
+    stars: 3
+    coins: 0
+  milestones:
+  - id: ms_carrot
+    title: Carrot harvests
+    statKey: harvest_carrot
+    crop: {fileID: 11400000, guid: a3438ceb74e514e459452c8a986fdf21, type: 2}
+    thresholds: 050000000f0000002800000064000000
+    stars: 02000000030000000500000008000000
+  - id: ms_tomato
+    title: Tomato harvests
+    statKey: harvest_tomato
+    crop: {fileID: 11400000, guid: ef86463c993b3408580f9bc4c71dbb6c, type: 2}
+    thresholds: 050000000f0000002800000064000000
+    stars: 02000000030000000500000008000000
+  - id: ms_wheat
+    title: Wheat harvests
+    statKey: harvest_wheat
+    crop: {fileID: 11400000, guid: 338fd04464f32402fb58bc37a7d1ced2, type: 2}
+    thresholds: 050000000f0000002800000064000000
+    stars: 02000000030000000500000008000000
+  dailyObjectivesPerDay: 3
+  dailyPool:
+  - id: d_harvest5
+    title: Harvest 5 crops
+    statKey: harvests
+    amount: 5
+    rewardStars: 2
+    rewardCoins: 15
+  - id: d_water8
+    title: Water crops 8 times
+    statKey: waterings
+    amount: 8
+    rewardStars: 2
+    rewardCoins: 15
+  - id: d_till6
+    title: Till 6 plots
+    statKey: tills
+    amount: 6
+    rewardStars: 1
+    rewardCoins: 10
+  - id: d_plant6
+    title: Plant 6 seeds
+    statKey: plantings
+    amount: 6
+    rewardStars: 1
+    rewardCoins: 10
+  - id: d_sell5
+    title: Sell 5 crops at the market
+    statKey: items_sold
+    amount: 5
+    rewardStars: 2
+    rewardCoins: 20
+  - id: d_carrots3
+    title: Harvest 3 carrots
+    statKey: harvest_carrot
+    amount: 3
+    rewardStars: 2
+    rewardCoins: 15
+  - id: d_store5
+    title: Store 5 items in the barn
+    statKey: items_stored
+    amount: 5
+    rewardStars: 1
+    rewardCoins: 10
+  upgrades:
+  - id: bigger_can
+    title: Bigger Watering Can
+    description: Carry 5 more waterings before refilling
+    cost: 40
+    requiredLevel: 2
+    effect: 0
+    amount: 5
+  - id: barn_expansion
+    title: Barn Expansion
+    description: Add 30 storage spaces to the barn
+    cost: 60
+    requiredLevel: 3
+    effect: 1
+    amount: 30
+  - id: fertile_soil
+    title: Fertile Soil
+    description: All crops grow 20% faster
+    cost: 120
+    requiredLevel: 4
+    effect: 2
+    amount: 20
+  heartStages:
+  - title: Withered Sapling
+    description: An ancient tree sleeps at the heart of the valley. Its leaves are
+      grey and dry - but something still glows deep inside.
+    starCost: 0
+    requiredLevel: 1
+  - title: Awakening
+    description: Fresh pink blossoms open and the first wildflowers return around
+      its roots.
+    starCost: 5
+    requiredLevel: 1
+  - title: Blooming
+    description: The tree grows tall and full. Mushrooms and flowering bushes gather
+      around it.
+    starCost: 12
+    requiredLevel: 2
+  - title: Radiant
+    description: A blue heart-crystal rises from the roots and fireflies drift through
+      the branches.
+    starCost: 25
+    requiredLevel: 3
+  - title: Heart of Mossvale
+    description: Standing stones circle the glowing tree. The valley is whole again.
+    starCost: 40
+    requiredLevel: 5

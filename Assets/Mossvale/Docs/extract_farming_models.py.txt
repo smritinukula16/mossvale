@@ -1,0 +1,235 @@
+"""Builds Mossvale farming models from the Mossvale_Environment.blend asset library (read-only use of the .blend).
+Run:  Blender -b --disable-autoexec Mossvale_Environment.blend --python extract_farming_models.py -- <out_dir>
+Outputs FBX (Y-up metres, same export settings as the pack's export_all.py):
+  CropBed_Frame  - bed frame + soil (no furrows, no plants)      (from CropBed_Carrot)
+  Plot_Ridge     - one 1.1 m furrow ridge (pack profile)
+  Seed_Mound     - small planted mound with seeds
+  Crop_Carrot    - Carrot_Leaves + Carrot_Root                   (one plant from CropBed_Carrot)
+  Crop_Tomato    - Tomato_Vine + Tomato_Fruit                    (one plant from CropBed_Tomato)
+  Crop_Wheat     - Wheat_Stalks + Wheat_Heads                    (one clump from CropBed_Wheat)
+  Tool_Hoe, Water_Droplet
+"""
+import bpy, bmesh, sys, os, math
+from mathutils import Vector
+
+OUT = sys.argv[sys.argv.index("--") + 1]
+os.makedirs(OUT, exist_ok=True)
+Z0 = 0.4  # soil ridge top in the pack's crop beds
+FBX_ARGS = dict(use_selection=True, object_types={"MESH", "EMPTY"}, global_scale=1.0, apply_unit_scale=True,
+                apply_scale_options="FBX_SCALE_ALL", bake_space_transform=True, axis_forward="Z", axis_up="Y",
+                mesh_smooth_type="FACE", use_mesh_modifiers=True, add_leaf_bones=False, bake_anim=False,
+                use_custom_props=False, path_mode="AUTO", embed_textures=False, use_tspace=False)
+M = bpy.data.materials
+scene = bpy.context.scene
+vl = bpy.context.view_layer
+
+
+def loose_parts(bm):
+    bm.verts.ensure_lookup_table()
+    seen, parts = set(), []
+    for v in bm.verts:
+        if v.index in seen:
+            continue
+        stack, comp = [v], set()
+        while stack:
+            x = stack.pop()
+            if x.index in comp:
+                continue
+            comp.add(x.index)
+            seen.add(x.index)
+            for e in x.link_edges:
+                stack.append(e.other_vert(x))
+        parts.append(comp)
+    return parts
+
+
+def part_info(bm, comp, mats):
+    vs = [bm.verts[i].co for i in comp]
+    c = sum(vs, Vector()) / len(vs)
+    zmin, zmax = min(v.z for v in vs), max(v.z for v in vs)
+    counts = {}
+    for f in bm.faces:
+        if f.verts[0].index in comp:
+            counts[f.material_index] = counts.get(f.material_index, 0) + 1
+    mi = max(counts, key=counts.get) if counts else 0
+    return c, zmin, zmax, mats[mi].name if mats[mi] else ""
+
+
+def mesh_from_parts(src, keep, name, offset):
+    """New mesh containing only the vertex sets in keep, translated by -offset, unused material slots removed."""
+    bm = bmesh.new()
+    bm.from_mesh(src.data)
+    bm.verts.ensure_lookup_table()
+    keep_idx = set().union(*keep) if keep else set()
+    bmesh.ops.delete(bm, geom=[v for v in bm.verts if v.index not in keep_idx], context="VERTS")
+    for v in bm.verts:
+        v.co -= offset
+    used = sorted({f.material_index for f in bm.faces})
+    for f in bm.faces:
+        f.material_index = used.index(f.material_index)
+    me = bpy.data.meshes.new(name)
+    bm.to_mesh(me)
+    bm.free()
+    for i in used:
+        me.materials.append(src.data.materials[i])
+    ob = bpy.data.objects.new(name, me)
+    scene.collection.objects.link(ob)
+    return ob
+
+
+def export(path_name, objs):
+    for o in vl.objects:
+        o.select_set(False)
+    for o in objs:
+        o.select_set(True)
+    vl.objects.active = objs[0]
+    bpy.ops.export_scene.fbx(filepath=os.path.join(OUT, path_name + ".fbx"), **FBX_ARGS)
+    print("EXPORTED", path_name, [o.name for o in objs])
+
+
+def grid_parts(bed_name, centers, plant_mats):
+    """Assign every plant-material loose part to its nearest plant centre (x, y)."""
+    src = bpy.data.objects[bed_name]
+    bm = bmesh.new()
+    bm.from_mesh(src.data)
+    parts = loose_parts(bm)
+    groups = {c: [] for c in centers}
+    base = []
+    for comp in parts:
+        c, zmin, zmax, mat = part_info(bm, comp, src.data.materials)
+        if mat in plant_mats and abs(c.x) < 1.9 and abs(c.y) < 1.4:
+            nearest = min(centers, key=lambda k: (k[0] - c.x) ** 2 + (k[1] - c.y) ** 2)
+            groups[nearest].append((comp, c, zmin, zmax, mat))
+        else:
+            base.append(comp)
+    bm.free()
+    return src, groups, base
+
+
+def make_crop(name, src, items, center, split):
+    """split(mat, zmin, zmax) -> child name. Returns [empty, children...]."""
+    off = Vector((center[0], center[1], Z0))
+    by_child = {}
+    for comp, c, zmin, zmax, mat in items:
+        by_child.setdefault(split(mat, zmin, zmax), []).append(comp)
+    em = bpy.data.objects.new(name, None)
+    scene.collection.objects.link(em)
+    objs = [em]
+    for child, comps in sorted(by_child.items()):
+        ob = mesh_from_parts(src, comps, child, off)
+        ob.parent = em
+        objs.append(ob)
+    return objs
+
+
+# ---------------------------------------------------------------- bed frame (carrot bed minus furrows + plants)
+src = bpy.data.objects["CropBed_Carrot"]
+bm = bmesh.new(); bm.from_mesh(src.data)
+keep = [comp for comp in loose_parts(bm)
+        if part_info(bm, comp, src.data.materials)[3] in ("MV_WoodDark", "MV_Wood", "MV_Soil")]
+bm.free()
+export("CropBed_Frame", [mesh_from_parts(src, keep, "CropBed_Frame", Vector())])
+
+# ---------------------------------------------------------------- carrot: rows y=+-0.85, 9 plants along x
+xs9 = [-1.45 + i * 0.36 for i in range(9)]
+src, groups, _ = grid_parts("CropBed_Carrot", [(x, y) for y in (-0.85, 0.85) for x in xs9], {"MV_Carrot", "MV_PlantStem"})
+target = (xs9[4], 0.85)
+export("Crop_Carrot", make_crop("Crop_Carrot", src, groups[target], target,
+                                lambda m, a, b: "Carrot_Root" if m == "MV_Carrot" else "Carrot_Leaves"))
+
+# ---------------------------------------------------------------- tomato: 3 rows x 4 plants (_plant_xs(4))
+span = 4.0 - 0.9
+xs4 = [-span / 2 + i * span / 3 for i in range(4)]
+src, groups, _ = grid_parts("CropBed_Tomato", [(x, y) for y in (-0.85, 0.0, 0.85) for x in xs4],
+                            {"MV_Wood", "MV_LeafDark", "MV_Bush", "MV_Tomato"})
+target = (xs4[1], 0.0)
+export("Crop_Tomato", make_crop("Crop_Tomato", src, groups[target], target,
+                                lambda m, a, b: "Tomato_Fruit" if m == "MV_Tomato" else "Tomato_Vine"))
+
+# ---------------------------------------------------------------- wheat: 3 rows x 9 clumps
+src, groups, _ = grid_parts("CropBed_Wheat", [(x, y) for y in (-0.85, 0.0, 0.85) for x in xs9], {"MV_Wheat", "MV_WheatDark"})
+target = (xs9[4], 0.0)
+export("Crop_Wheat", make_crop("Crop_Wheat", src, groups[target], target,
+                               lambda m, a, b: "Wheat_Stalks" if (b - a) > 0.3 else "Wheat_Heads"))
+
+
+# ---------------------------------------------------------------- generated pieces (pack materials, pack proportions)
+def new_obj(name, build, mats):
+    me = bpy.data.meshes.new(name)
+    bm = bmesh.new()
+    build(bm)
+    bm.to_mesh(me); bm.free()
+    for m in mats:
+        me.materials.append(M[m])
+    ob = bpy.data.objects.new(name, me)
+    scene.collection.objects.link(ob)
+    return ob
+
+
+def ridge(bm):
+    # pack furrow profile (y, z) extruded along x, 1.1 m long
+    prof = [(-0.34, 0.0), (-0.22, 0.13), (0.22, 0.13), (0.34, 0.0)]
+    L = 0.55
+    a = [bm.verts.new((-L, y, z)) for y, z in prof]
+    b = [bm.verts.new((L, y, z)) for y, z in prof]
+    for i in range(3):
+        bm.faces.new((a[i], a[i + 1], b[i + 1], b[i]))
+    bm.faces.new(list(reversed(a)))
+    bm.faces.new(b)
+    bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
+
+
+export("Plot_Ridge", [new_obj("Plot_Ridge", ridge, ["MV_SoilLight"])])
+
+
+def seed_mound(bm):
+    r = bmesh.ops.create_icosphere(bm, subdivisions=1, radius=0.14)
+    for v in r["verts"]:
+        v.co.z = max(v.co.z, -0.02) * 0.4
+    for f in bm.faces:
+        f.material_index = 0
+    for i, (x, y) in enumerate([(-0.04, 0.02), (0.035, 0.03), (0.0, -0.04)]):
+        s = bmesh.ops.create_icosphere(bm, subdivisions=1, radius=0.025)
+        for v in s["verts"]:
+            v.co = Vector((v.co.x * 0.8 + x, v.co.y * 1.3 + y, v.co.z * 0.7 + 0.055))
+        for f in {f for v in s["verts"] for f in v.link_faces}:
+            f.material_index = 1
+
+
+export("Seed_Mound", [new_obj("Seed_Mound", seed_mound, ["MV_SoilLight", "MV_WoodLight"])])
+
+
+def hoe(bm):
+    # handle along +z, blade at top pointing +y
+    h = bmesh.ops.create_cone(bm, cap_ends=True, segments=6, radius1=0.028, radius2=0.024, depth=1.25)
+    for v in h["verts"]:
+        v.co.z += 0.625
+    for f in bm.faces:
+        f.material_index = 0
+    def box(cx, cy, cz, sx, sy, sz, mat):
+        r = bmesh.ops.create_cube(bm, size=1.0)
+        for v in r["verts"]:
+            v.co = Vector((v.co.x * sx + cx, v.co.y * sy + cy, v.co.z * sz + cz))
+        for f in {f for v in r["verts"] for f in v.link_faces}:
+            f.material_index = mat
+    box(0, 0.0, 1.2, 0.07, 0.07, 0.08, 1)        # collar
+    box(0, 0.13, 1.17, 0.22, 0.22, 0.025, 2)     # blade plate
+    box(0, 0.24, 1.10, 0.22, 0.02, 0.14, 2)      # blade edge (bent down)
+
+
+export("Tool_Hoe", [new_obj("Tool_Hoe", hoe, ["MV_Wood", "MV_WoodDark", "MV_MetalLight"])])
+
+
+def droplet(bm):
+    s = bmesh.ops.create_icosphere(bm, subdivisions=2, radius=0.12)
+    c = bmesh.ops.create_cone(bm, cap_ends=False, segments=8, radius1=0.105, radius2=0.0, depth=0.17)
+    for v in c["verts"]:
+        v.co.z += 0.12
+    for f in bm.faces:
+        f.material_index = 0
+    for v in bm.verts:
+        v.co.z += 0.12
+
+
+export("Water_Droplet", [new_obj("Water_Droplet", droplet, ["MV_TankBlue"])])
+print("ALL_DONE")

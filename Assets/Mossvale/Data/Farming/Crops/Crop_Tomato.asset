@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f0618b0a088402aad387a2668bde8a, type: 3}
+  m_Name: Crop_Tomato
+  m_EditorClassIdentifier: Mossvale.Gameplay::Mossvale.Farming.CropData
+  cropId: tomato
+  displayName: Tomato
+  seedItem: {fileID: 11400000, guid: 9f0c91857df2c4b7fad897f822eadad0, type: 2}
+  produceItem: {fileID: 11400000, guid: 946e11d19093b4f0d8630b20cd7c9c39, type: 2}
+  secondsPerStage: 20
+  stagePrefabs:
+  - {fileID: 7072231288799483878, guid: 89e01289e584d410c95fbeb42911cddd, type: 3}
+  - {fileID: 6318789102694450768, guid: b945adf4dd408460e9fe733629d6a2a8, type: 3}
+  - {fileID: 1342602242867644338, guid: a4e0211601e094cd09221600788b0fab, type: 3}
+  - {fileID: 3647773236168938812, guid: 25f9bfb4adcce44138ab560a1260bc1d, type: 3}
+  minYield: 3
+  maxYield: 5
+  minSeedsBack: 1
+  maxSeedsBack: 2
